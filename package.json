@@ -1,0 +1,27 @@
+{
+  "name": "codeceptexample",
+  "version": "1.0.0",
+  "description": "Example for learning codeceptjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marb61a/CodeceptExample.git"
+  },
+  "keywords": [
+    "Codecept",
+    "Puppeteer"
+  ],
+  "author": "Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marb61a/CodeceptExample/issues"
+  },
+  "homepage": "https://github.com/marb61a/CodeceptExample#readme",
+  "devDependencies": {
+    "codeceptjs": "^2.6.10",
+    "puppeteer": "^5.2.1"
+  }
+}
