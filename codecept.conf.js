@@ -27,5 +27,15 @@ exports.config = {
     }
   },
   tests: './*_test.js',
-  name: 'CodeceptExample'
+  name: 'CodeceptExample',
+  multiple: {
+    basic: {
+      "browsers": [
+        {
+          "browser": "chrome",
+          "WindowSize": "maximize"
+        }
+      ]
+    }
+  }
 }

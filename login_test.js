@@ -31,3 +31,15 @@ Scenario('test the demo site', (I) => {
     I.seeTitleEquals("Execute Automation");
 
 });
+
+/*
+    Codecept can run tests in 2 different ways
+    run-workers which spawns Node worker in a thread. The tests are
+    split by scenario the scenarios are then mixed between groups and
+    then each worker will run tests belonging to its own group
+    To run -- npx codeceptjs run-workers <quantity> 
+
+    run-multiple which spawns a sub-process with Codecept. The tests are
+    split by file and configured in a config file -- codecept.conf.js
+    To run -- npx codeceptjs run multiple basic (setup in conf file)
+*/
