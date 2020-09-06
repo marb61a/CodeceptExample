@@ -22,6 +22,7 @@
   "homepage": "https://github.com/marb61a/CodeceptExample#readme",
   "devDependencies": {
     "codeceptjs": "^2.6.10",
+    "mochawesome": "^6.1.1",
     "puppeteer": "^5.2.1"
   }
 }

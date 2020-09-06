@@ -1,11 +1,17 @@
 // To run tests in codecept use the following command at the cli
 // npx codeceptjs run --steps
+// To genereate a report using mochawesome while running test
+// npx codeceptjs run --reporter mochawesome
 
 Feature('login');
 
-Scenario('test the demo site', (I) => {
+// Using the before hook
+// Will be applied to multiple scenarios
+Before((I) => {
     I.amOnPage('/Login.html');
+});
 
+Scenario('test the demo site', (I) => {
     // Fill in the passsword and username text fields
     I.fillField("UserName", "admin");
     I.fillField("Password", "password");
@@ -23,5 +29,5 @@ Scenario('test the demo site', (I) => {
 
     // Checking the page title
     I.seeTitleEquals("Execute Automation");
-    
+
 });
