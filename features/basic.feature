@@ -1,7 +1,10 @@
-Feature: Business rules
-  In order to achieve my goals
-  As a persona
-  I want to be able to interact with a system
+Feature: Login
+  Verify login functionality to work
 
-  Scenario: do something
-    Given I have a defined step
+  Scenario: Perform Login Operation
+    Given I navigate to the application
+    Given Login with username and password
+      | UserName | Password|
+      | admin | password |
+    And I click Login button
+    # Then I should see loggedIn
